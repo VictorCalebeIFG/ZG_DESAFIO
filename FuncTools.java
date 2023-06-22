@@ -2,15 +2,15 @@
 public class FuncTools{
 
 	// Atributos Com os refrões que serão cantados.
-	static String ref_loop	=	"\t%d patinhos\n\tForam passear\n\tAlém das montanhas\n\tPara brincar\n\tA mamãe gritou\n\tQuá, quá, quá, quá\n\tMas só %d patinhos\n\tVoltaram de lá.\n\n";
-	static String ref_final = "\tA mamãe patinha foi procurar\n\tAlém das montanhas\n\tNa beira do mar\n\tA mamãe gritou\n\tQuá, quá, quá, quá\n\tE os %d patinhos\n\tVoltaram de lá.\n";
+	String ref_loop	=	"\t%d patinhos\n\tForam passear\n\tAlém das montanhas\n\tPara brincar\n\tA mamãe gritou\n\tQuá, quá, quá, quá\n\tMas só %d patinhos\n\tVoltaram de lá.\n\n";
+	String ref_final = "\tA mamãe patinha foi procurar\n\tAlém das montanhas\n\tNa beira do mar\n\tA mamãe gritou\n\tQuá, quá, quá, quá\n\tE os %d patinhos\n\tVoltaram de lá.\n";
 
 
 	// Método que canta a música toda. Recebe um valor inteiro.
-	public static void cantar_ref(int patinhos){
+	public void cantar_ref(int patinhos){
 		
 		// Varia de 10 até 2.
-		for (int i = 10 ; i!= 1 ; i--){
+		for (int i = patinhos ; i!= 1 ; i--){
 			System.out.printf(ref_loop,i,i-1);
 		}
 		
@@ -25,7 +25,7 @@ public class FuncTools{
 	// Método que substitui as palvras no plural para o singular.
 	// É chamado quando sobra apenas 1 pintinho.
 
-	public static String replace_ref(){
+	public String replace_ref(){
 		String musica = "";
 
 		musica = ref_loop.replace("patinhos", "patinho");
