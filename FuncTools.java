@@ -9,7 +9,7 @@ public class FuncTools{
 	// Método que canta a música toda. Recebe um valor inteiro.
 	public void cantar_ref(int patinhos){
 		
-		// Varia de 10 até 2.
+		// Varia de patinhos até 2.
 		for (int i = patinhos ; i!= 1 ; i--){
 			System.out.printf(ref_loop,i,i-1);
 		}

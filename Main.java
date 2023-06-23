@@ -4,7 +4,7 @@ public class Main {
 	
 	public static void main(String[] args){
 
-		System.out.println("Quantos pitinhos a mamãe patinho tinha ?");
+		System.out.println("Quantos patinhos a mamãe patinho tinha ?");
 
 		Scanner scanner = new Scanner(System.in);
 
